@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estudiantes y Promedio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Estudiantes y sus Calificaciones</h1>
+
+    <!-- Tabla con todos los estudiantes -->
+    <h2>Todos los Estudiantes</h2>
+    <table id="todos" class="tabla-estudiantes">
+      <tr>
+        <th>Nombre</th>
+        <th>Calificación</th>
+      </tr>
+    </table>
+
+    <!-- Promedio de todos los estudiantes -->
+    <div class="promedio">
+      <strong>Promedio general:</strong> <span id="promedio-general"></span>
+    </div>
+
+    <!-- Tabla con los 5 mejores estudiantes -->
+    <h2>Los 5 Mejores Estudiantes</h2>
+    <table id="mejores" class="tabla-estudiantes">
+      <tr>
+        <th>Nombre</th>
+        <th>Calificación</th>
+      </tr>
+    </table>
+    <div class="promedio">
+      <strong>Promedio de los 5 mejores estudiantes:</strong> <span id="promedio-mejores"></span>
+    </div>
+
+    <!-- Tabla con los 5 peores estudiantes -->
+    <h2>Los 5 Peores Estudiantes</h2>
+    <table id="peores" class="tabla-estudiantes">
+      <tr>
+        <th>Nombre</th>
+        <th>Calificación</th>
+      </tr>
+    </table>
+    <div class="promedio">
+      <strong>Promedio de los 5 peores estudiantes:</strong> <span id="promedio-peores"></span>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1, h2 {
+    color: #333;
+  }
+  
+  .promedio {
+    margin: 20px 0;
+    font-size: 18px;
+  }
+  
+  /* Tabla con colores llamativos */
+  .tabla-estudiantes {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .tabla-estudiantes th {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+    background-color: #ff6347; /* Color vibrante para los encabezados */
+    color: white;
+    font-size: 16px;
+  }
+  
+  .tabla-estudiantes td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+    background-color: #ffe4b5; /* Color claro para las celdas */
+    color: #333;
+    font-size: 14px;
+  }
+  
+  /* Fila con color alternado */
+  .tabla-estudiantes tr:nth-child(even) {
+    background-color: #ffdab9; /* Color alternado más llamativo */
+  }
+  
+  .tabla-estudiantes tr:hover {
+    background-color: #ffd700; /* Color brillante al pasar el ratón */
+    animation: scaleUp 0.3s ease-in-out forwards;
+  }
+  
+  /* Animaciones usando keyframes */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Animar cada fila cuando aparezca */
+  .tabla-estudiantes tr {
+    animation: fadeInUp 0.5s ease-in-out;
+  }
+  
+  /* Efecto de escalado al pasar el ratón */
+  @keyframes scaleUp {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.05);
+    }
+  }
+  
